@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Nav from "./global/components/Nav.jsx" // Menu
 import Footer from "./global/components/Footer.jsx" // Footer
-import Faqs from "../src/pages/Faqs/Faqs.jsx" // Pagina de preguntas frecuentes
+import Faqs from "../src/pages/Faqs/Faqs.jsx" 
+import Prouducts from "../src/pages/Products/Products.jsx"
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/faqs" element={<Faqs />} />
+        <Route path="/products" element={<Prouducts/>} />
       </Routes>
       <Footer />
     </Router>
